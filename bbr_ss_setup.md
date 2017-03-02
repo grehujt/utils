@@ -17,6 +17,11 @@ sysctl net.ipv4.tcp_available_congestion_control
 sysctl net.ipv4.tcp_congestion_control
 lsmod | grep bbr
 
+## edit locale if needed
+vi /etc/environment
+LC_ALL=en_US.UTF-8
+LANG=en_US.UTF-8
+
 ## ss
 curl -fsSL https://get.docker.com/ | sh
 docker run -d -p 443:1984 oddrationale/docker-shadowsocks -s 0.0.0.0 -p 1984 -k PASSWD -m aes-256-cfb
