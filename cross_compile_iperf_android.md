@@ -49,7 +49,7 @@ APP_PLATFORM := android-22
 
 ```
 
-- vi iperf_api.c to change the tmp dir to /data/data/com.yfisoft.heatmap for iperf3.XXXXXX
+- vi iperf_api.c to change the tmp dir to /data/data/com.example.appdemo for iperf3.XXXXXX
 - vi net.c: change sys/fcntl.h into fcntl.h
 - docker pull snowdream/android-ndk
 - docker run --rm -ti -v /path/to/jni:/opt/jni snowdream/android-ndk bash
